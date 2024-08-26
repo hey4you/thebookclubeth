@@ -1,0 +1,61 @@
+/* header.css */
+
+.appBar {
+  background-color: #18a59d !important;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 25%;
+  box-shadow: 0px 8px #ffbf0a !important;
+  padding: 10px 30px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+}
+
+.nav_buttons {
+  display: flex;
+  gap: 20px; /* Add spacing between buttons */
+}
+
+.navButton {
+  color: white;
+  text-transform: none;
+}
+
+.buttonIcon {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.buttonText {
+  font-size: 1.8rem;
+}
+
+.textOnlyButton .buttonIcon {
+  display: none; /* Hide icons on small screens */
+}
+
+.menuDropdown .MuiMenuItem-root {
+  text-align: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .navButton {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .menuDropdown .MuiMenuItem-root {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    display: none;
+  }
+}

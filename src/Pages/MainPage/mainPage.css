@@ -1,0 +1,93 @@
+/* mainPage.css */
+
+.root {
+  position: relative;
+  display: flex;
+  height: 80vh; /* Adjust height as needed */
+  overflow: hidden; /* Ensures content does not overflow */
+}
+
+.imageSection {
+  position: relative;
+  flex: 1;
+  overflow: hidden; /* Ensures the image stays within its container */
+}
+
+.welcomeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+
+.welcomeImage:hover {
+  transform: scale(1.1);
+}
+
+.textSection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  pointer-events: none; /* Ensure clicks go through to the image */
+}
+
+.welcomeBox {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 8px 8px #ffbf0a;
+  pointer-events: auto; /* Enable interactions with the box */
+}
+
+.titleText {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.titleSubtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.exploreButton {
+  background-color: #18a59d !important;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.exploreButton:hover {
+  background-color: #147f77;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .titleText {
+    font-size: 2rem;
+  }
+
+  .titleSubtitle {
+    font-size: 1rem;
+  }
+
+  .welcomeBox {
+    padding: 15px;
+  }
+}

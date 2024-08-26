@@ -1,0 +1,115 @@
+.aboutUsContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 50px 20px;
+}
+
+.missionSection {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #18a59d;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px #ffbf0a;
+}
+
+.historySection {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #18a59d;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px #ffbf0a;
+}
+
+.teamSection {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #18a59d;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px #ffbf0a;
+}
+
+.valuesSection {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #18a59d;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 8px 8px #ffbf0a;
+}
+
+.heroTitle {
+  font-weight: bold;
+}
+
+.heroSubtitle {
+  color: #666;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sectionContent {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.teamImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teamImage {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.teamDescription {
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #ffbf0a;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .aboutUsContainer {
+    padding: 10px;
+  }
+
+  .heroSection {
+    padding: 30px 10px;
+  }
+
+  .sectionContent {
+    font-size: 1rem;
+  }
+
+  .teamDescription {
+    font-size: 1rem;
+    text-align: center;
+    background-color: #ffbf0a;
+  }
+}

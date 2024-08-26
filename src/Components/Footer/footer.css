@@ -1,0 +1,48 @@
+/* footer.css */
+
+.footerBox {
+  background-color: #ffbf0a;
+  width: 100%;
+  padding: 40px 20px; /* Increased padding for more spacing */
+  display: flex;
+  justify-content: center;
+  position: static;
+  bottom: 0;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around; /* Distribute space evenly between columns */
+  align-items: center; /* Center content vertically */
+  width: 100%;
+  max-width: 1200px; /* Limit max width for better alignment */
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+.footerTitle {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footerBox a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerBox a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    text-align: center; /* Center-align text on small screens */
+  }
+
+  .footerTitle {
+    margin-bottom: 15px;
+  }
+}

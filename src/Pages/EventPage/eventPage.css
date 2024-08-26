@@ -1,0 +1,32 @@
+.eventGrid {
+  padding-bottom: 100px;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .eventGrid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eventGrid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.MuiTypography-h5 {
+  font-size: 1rem; /* Further adjust card title size */
+}
+
+.MuiCard-root {
+  max-width: 100%; /* Ensure cards take full width on mobile */
+}
+
+.MuiTypography-body2 {
+  font-size: 0.875rem; /* Adjust card description size */
+}
