@@ -40,19 +40,29 @@
   display: none; /* Hide icons on small screens */
 }
 
-.menuDropdown .MuiMenuItem-root {
-  text-align: center;
-  justify-content: center;
-}
-
 @media (max-width: 600px) {
-  .navButton {
+  .buttonText {
     padding: 10px;
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 
-  .menuDropdown .MuiMenuItem-root {
-    padding: 10px 20px;
+  .nav_buttons {
+    gap: 1px; /* Add spacing between buttons */
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .buttonText {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .nav_buttons {
+    gap: 1px; /* Add spacing between buttons */
   }
 
   .logo {

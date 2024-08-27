@@ -14,8 +14,15 @@
 
 @media (max-width: 480px) {
   .eventGrid {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .eventGrid {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
