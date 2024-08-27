@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Grid, Typography, Box, Link } from "@mui/material";
+import "@fontsource/rozha-one";
 
 const Footer: React.FC = () => {
   return (
@@ -15,7 +16,11 @@ const Footer: React.FC = () => {
       <Container maxWidth="lg">
         <Grid container spacing={4} justifyContent="center">
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6" sx={{ color: "white", mb: 2 }}>
+            <Typography
+              variant="h6"
+              fontFamily="rozha-one"
+              sx={{ color: "white", mb: 2 }}
+            >
               Contact Us
             </Typography>
             <Typography variant="body2" sx={{ color: "white" }}>
@@ -33,7 +38,11 @@ const Footer: React.FC = () => {
           </Grid>
 
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6" sx={{ color: "white", mb: 2 }}>
+            <Typography
+              variant="h6"
+              fontFamily="rozha-one"
+              sx={{ color: "white", mb: 2 }}
+            >
               Follow Us
             </Typography>
             <Typography variant="body2" sx={{ color: "white" }}>
@@ -69,7 +78,11 @@ const Footer: React.FC = () => {
           </Grid>
 
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6" sx={{ color: "white", mb: 2 }}>
+            <Typography
+              variant="h6"
+              fontFamily="rozha-one"
+              sx={{ color: "white", mb: 2 }}
+            >
               Legal
             </Typography>
             <Typography variant="body2" sx={{ color: "white" }}>
