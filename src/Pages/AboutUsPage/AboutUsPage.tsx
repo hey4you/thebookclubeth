@@ -92,7 +92,7 @@ const AboutUsPage: React.FC = () => {
             className="teamDescription"
           >
             Emilia Mende - Founder & President <br />
-            Selin .... - Event Coordinator <br />
+            Selin .... - Founder & President <br />
           </Typography>
         </Box>
       </Box>
