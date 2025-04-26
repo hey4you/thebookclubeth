@@ -1,9 +1,6 @@
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import HomeIcon from "@mui/icons-material/Home";
-import Diversity1Icon from "@mui/icons-material/Diversity1";
-import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import { Link } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
@@ -18,7 +15,7 @@ const Header: React.FC = () => {
     <AppBar className="appBar" position="static">
       <Toolbar className="toolbar">
         <img
-          src={require("../../page_assets/Thebookclub_Logo_round.png")}
+          src={require("../../page_assets/logo_oval.png")}
           alt="Logo"
           className="logo"
         />
@@ -31,8 +28,7 @@ const Header: React.FC = () => {
             component={Link}
             to="/Home"
           >
-            {!isMobile && <HomeIcon className="buttonIcon" />}
-            <span className="buttonText">Home</span>
+            <span className="buttonText">home</span>
           </IconButton>
           <IconButton
             className={`navButton ${isMobile ? "textOnlyButton" : ""}`}
@@ -42,8 +38,7 @@ const Header: React.FC = () => {
             component={Link}
             to="/Events"
           >
-            {!isMobile && <CalendarMonthOutlinedIcon className="buttonIcon" />}
-            <span className="buttonText">Events</span>
+            <span className="buttonText">events</span>
           </IconButton>
           <IconButton
             className={`navButton ${isMobile ? "textOnlyButton" : ""}`}
@@ -53,8 +48,7 @@ const Header: React.FC = () => {
             component={Link}
             to="/About-Us"
           >
-            {!isMobile && <Diversity1Icon className="buttonIcon" />}
-            <span className="buttonText">About Us</span>
+            <span className="buttonText">about us</span>
           </IconButton>
         </Box>
       </Toolbar>

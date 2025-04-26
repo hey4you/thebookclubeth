@@ -1,42 +1,38 @@
-/* mainPage.css */
-
 .mainContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-  box-sizing: border-box;
+  position: relative; /* To position child elements absolutely */
+  width: 100%;
+  max-width: max-content;
+  margin: 0 auto; /* Center the container */
+  overflow: hidden; /* Ensure no overflow */
+  height: 80vh;
+  z-index: 1;
 }
 
 .imageContainer {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: none !important;
 }
 
 .welcomeImage {
   width: 100%;
-  max-width: 600px;
-  border-radius: 20px;
-  opacity: 0.85;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.welcomeImage:hover {
-  opacity: 1;
-  transform: scale(1.05);
 }
 
 .textContainer {
-  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute; /* Absolute positioning to overlap the image */
+  top: 20%; /* Adjust to control the overlap */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white; /* Semi-transparent background */
   padding: 20px;
-  border-radius: 10px;
-  border-radius: 20px;
-  box-shadow: 8px 8px #ffbf0a;
-  max-width: 600px;
-  width: 100%;
+  max-width: 1200px;
+  width: 80%; /* Use 80% of available width */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 15px; /* Rounded corners */
+  text-align: center; /* Center-align the text */
 }
 
 .titleText {
@@ -57,6 +53,7 @@
   font-weight: bold;
   padding: 10px 20px;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  padding-top: 30px;
 }
 
 .exploreButton:hover {
@@ -66,8 +63,9 @@
 
 /* Responsive Styles */
 @media (max-width: 400px) {
-  .mainContainer {
-    padding: 10px;
+  .textContainer {
+    padding: 15px;
+    width: 90%; /* Adjust for smaller screens */
   }
 
   .titleText {
@@ -81,10 +79,6 @@
   .exploreButton {
     padding: 8px 16px;
     font-size: 0.9rem;
-  }
-
-  .textContainer {
-    padding: 15px;
   }
 
   .welcomeImage {
