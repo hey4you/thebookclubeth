@@ -4,6 +4,7 @@ import { Button, Box } from "@mui/material";
 import { Link } from "react-router-dom";
 import InstaPromotion from "../../Components/InstaPromotion/InstaPromotion";
 import "./mainPage.css";
+import "@fontsource/rozha-one";
 
 const MainPage = () => {
   return (
@@ -20,10 +21,20 @@ const MainPage = () => {
 
         {/* Text Section */}
         <Box className="textContainer">
-          <Typography className="titleText" variant="h4" gutterBottom>
-            THEBOOKCLUB ETH
+          <Typography
+            className="titleText"
+            fontFamily="rozha-one"
+            variant="h4"
+            gutterBottom
+          >
+            thebookclub ETH
           </Typography>
-          <Typography variant="body1" className="titleSubtitle" gutterBottom>
+          <Typography
+            variant="body1"
+            fontFamily="rozha-one"
+            className="titleSubtitle"
+            gutterBottom
+          >
             Welcome to the first book club at ETH! You might be thinking, "Book
             club... what could that be?" Well, we're not your typical book club.
             Our goal is to create a community and a platform where students can

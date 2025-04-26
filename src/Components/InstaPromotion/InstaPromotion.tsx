@@ -11,14 +11,14 @@ const InstaPromotion: React.FC = () => {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        padding: "20px",
+        margin: "20px",
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
         <img
           src={require("../../page_assets/Thebookclub_Logo_round.png")}
           alt="Logo"
-          style={{ height: "100px", marginRight: "20px" }}
+          style={{ height: "100px" }}
         />
         <InstagramIcon
           sx={{ fontSize: 80, color: "#833AB4", marginLeft: "20px" }}
